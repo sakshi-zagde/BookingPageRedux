@@ -1,0 +1,184 @@
+
+// InputComponent.scss
+@import "_variables";
+  
+.maincontainer {
+    margin-bottom: 15px;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+
+
+    h2{
+      width: 1100px;
+      margin: 40px;
+    }
+    
+    // body, html {
+    //   // margin: 20px;
+    //   padding: 0;
+    //   overflow-x: hidden; // Prevent horizontal scrolling
+    //   background-color: $primary-color;
+    //   color: rgb(23, 21, 21);
+    //   border-bottom-left-radius: 0in;
+    //   font-family: Arial, sans-serif;
+    //   background-color: aquamarine;
+    // }
+    
+    .cus-input{
+      width:330px;
+      padding: 15px;
+    }
+    
+    .custom-input {
+      width: $input-width;      // Set the width of the input
+      height: $input-height;    // Set the height of the input
+      padding: $input-padding;  // Adjust padding for better appearance
+      font-size: $input-font-size;  // Adjust font size
+      margin: $input-margin;
+      // Add more styles as needed
+      
+    }
+
+    .custom-inn {
+      flex: 1;  // Each input will take up equal width
+      margin-right: 5px;  // Add margin between the inputs if needed
+  
+    }
+
+  
+    .left-side {
+      display: flex;
+      flex:1;
+      flex-direction: column;
+      width: 30%;
+      
+      // Adjust the width as needed
+  
+      .form-group {
+        margin-bottom: 15px;
+        flex-direction: column;
+      }
+    }
+    
+    
+    .right-side {
+      width: 80%; // Adjust the width as needed
+      padding-left: 150px; // Adjust the padding as needed
+
+      textarea {
+        width: 80%;
+        height: 80%;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+    }
+
+        
+    .reset-button {
+      background-color: $button-background-color;
+      color: $button-text-color;
+      padding: $button-padding;
+      border: $button-border;
+      border-radius: $button-border-radius;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      flex-direction: row;
+
+      &:hover {
+        background-color: $button-hover-background;
+      }
+
+      & + & {
+        margin-left: 200px; // Adjust the value to set the desired gap
+      }
+    }
+
+    .form-row {
+      display: flex;
+      width: 100%;
+    
+      .form-row1 {
+        display: flex;
+        justify-content: space-between;  // Adjust this property based on your spacing preference
+      }
+    }
+    
+   
+
+  }
+
+    // Button styles
+    .custom-button {
+      background-color: $button-background-color;
+      color: $button-text-color;
+      padding: $button-padding;
+      border: $button-border;
+      border-radius: $button-border-radius;
+      cursor: pointer;
+      font-size: 17px;
+      transition: background-color 0.3s ease;
+      flex-direction: column;
+
+      &:hover {
+        background-color: $button-hover-background;
+      }
+
+      & + & {
+        margin-left: 250px; // Adjust the value to set the desired gap
+      }
+    }
+
+@media (max-width: 1000px) {
+  .maincontainer {
+    align-items: flex-start;
+    margin-left: 100px;
+    
+
+  .form-row {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  .button-container {
+    margin-top: 10px;
+  }
+
+  .custom-button {
+    margin-left: 0 !important;
+    margin-top: 5px;
+  }
+  h2{
+    width: 60%;
+    padding: 50px;
+    text-align: left;
+  }
+
+  // Additional styles for non-input elements
+  .form-group:not(.form-row1) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; // Add spacing between non-input elements
+  }
+}
+ 
+}
+
+
+
+
+ 

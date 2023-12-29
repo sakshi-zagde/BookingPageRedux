@@ -1,0 +1,65 @@
+
+
+.containerbottle {
+  display: flex;
+  justify-content: center; // Horizontal centering
+  align-items: center; // Vertical centering
+  height: 100vh; // Set the container height to 100% of the viewport height
+  flex-direction: column;
+
+  nav {
+      display: flex;
+      flex-direction: column; // Arrange buttons vertically
+  
+      button {
+        margin: 30px; // Add some space between buttons
+        border-radius: 8px;
+      font-size: 16px; // Set the font size to increase button size
+      padding: 10px 20px; // Adjust padding for better button appearance
+      background-color: rgb(128, 239, 128); // Set the background color to light green
+      color: white; // Set the text color to white for better contrast
+      border: none; // Remove border for a cleaner look
+      cursor: pointer; // Add a pointer cursor on hover
+      transition: background-color 0.3s; // Add a smooth transition for better user experience
+
+      &:hover {
+        background-color: rgb(17, 146, 17); // Change the background color on hover
+      }
+       }
+    }
+    
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1{
+      color:rgb(106, 21, 148);
+    }
+
+    img{
+      width: 700px;
+    }
+}
+
+@media (max-width: 900px) {
+  h1{
+    font-size: 20px;
+  }   
+  .imgage{
+    // width:0px;
+    padding-right: 400px;
+    padding-left: 400px;
+  }
+  
+}
+
+@media (max-width: 450px) {
+   
+  .imgage{
+    // padding-right: 400px;
+    // padding-left: 100px;
+  }
+  
+}

@@ -1,0 +1,86 @@
+
+$border-color: #100d0d; // Choose your preferred border color
+@import "_variables";
+
+.tablecontainer{
+  
+h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 25px;
+  
+}
+
+
+  th {
+    background-color: #0a8250;
+    padding: 20px; // Choose your preferred header background color
+   
+  }
+  tr:hover {
+    background-color: #9d9696; /* Change background color on hover */
+  }
+  
+ 
+  button{
+    background-color: yellowgreen;
+    color: $button-text-color;
+    padding: 4px;
+    border: $button-border;
+    border-radius: $button-border-radius;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    flex-direction: row;
+    margin-top: 200px;
+  }
+
+
+table {
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid $border-color;
+  
+}
+
+th, td {
+  padding: 6px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 14px; // Adjust the font size as needed
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+}
+
+@media (max-width: 1200px) {
+ .tablecontainer{
+  table {
+    width: 100%;
+    overflow-x: auto; // Add horizontal scroll if needed
+    margin: 0 auto;   // Center the container horizontally
+    max-width: 3000px;
+    // padding-right: 200px;
+  }
+  th, td {
+    font-size: 9px; // Adjust the font size for mobile screens
+    text-overflow: ellipsis;
+    word-wrap: break-word; 
+  }
+  h2{
+    width: 60%;
+    padding: 50px;
+    text-align: center;
+  }
+  td {
+    min-width: 10px;  // Set a minimum width for the data columns
+  }
+  th {
+    min-width: 10px;  // Set a minimum width for the data columns
+  }
+ }
+}
