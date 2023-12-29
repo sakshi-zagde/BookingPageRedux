@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles.scss";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "./rootReducer";

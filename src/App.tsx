@@ -3,7 +3,7 @@ import React from 'react';
 import Home from './Home';
 import { Provider } from 'react-redux';
 import store from './store';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CustomerList from "./components/CustomerList";
 import AddCustomer from "./components/AddCustomer";
 // import './styles.scss'

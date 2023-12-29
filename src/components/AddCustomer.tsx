@@ -1,15 +1,15 @@
 
 import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import {  useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { addCustomer ,viewCustomer} from "../customerActions";
+import { addCustomer } from "../customerActions";
 import "./AddCustomer.scss";
 
 
 const AddCustomer: React.FC = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  // const customers = useSelector((state: RootState) => state.formData);
+  
 
 
   const [formData, setFormData] = useState({
